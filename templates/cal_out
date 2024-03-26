@@ -1,0 +1,9 @@
+
+subnet_id: ##subnet_id##
+cidr: ##cidr##
+prefix: ##prefix##
+size: ##size##
+subnet_mask: ##subnet_mask##
+broadcast: ##broadcast##
+wildcard_mask: ##wildcard_mask##
+gateway_addr: ##gateway_addr##

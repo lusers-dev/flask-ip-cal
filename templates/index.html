@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>CIDR Calculator</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/normalize.css') }}">
+</head>
+<body>
+    <header>
+      <div class="inner">
+        <a href="/">
+          <h1>lusers.dev</h1>
+        </a>
+        <h2></h2>
+      </div>
+    </header>
+
+    <div id="content-wrapper">
+      <div class="inner clearfix">
+        <section id="main-content">
+
+            <h1 id="content-mainsection">CIDR Calculator</h1>
+
+            <form action="/" method="post">
+                <input type="text" placeholder="Enter CIDR Notation. Eg: 10.10.10.0/26" name="cidr_entry" required>
+                <br><br>
+                <input type="submit" value="SUBMIT" id="process" style="text-align: center;">
+            </form>
+            <pre>
+            {% for message in get_flashed_messages() %}
+                 {{ message }}
+            {% endfor %}
+            </pre>
+
+           <object type="text/html" data="/static/project-desc.txt"></object><br><br>
+
+        </section>
+
+        <aside id="sidebar">
+          <p><h2><i>References:</i></h2> 
+            <ul>
+              <li><a href="https://github.com/" target="_blank" rel="noopener noreferrer">GitHub</a></li>
+              <li><a href="https://docker.com/" target="_blank" rel="noopener noreferrer">Docker</a></li>
+              <li><a href="https://python.org/" target="_blank" rel="noopener noreferrer">Python</a></li>
+              <li><a href="https://palletsprojects.com/p/flask/" target="_blank" rel="noopener noreferrer">Flask</a></li>
+           </ul>
+          </p>
+        </aside>
+
+      </div>
+    </div>
+</body>
+</html>
